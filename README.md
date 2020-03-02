@@ -1,1 +1,183 @@
 # Exercice-1-Stats-descrip
+  ## CHAPITRE 1
+
+***Exercice 1***
+
+```js
+La variable statistique "couleur de maisons d'un quartier" est :
+```
+- [ ] Qualitative v
+- [ ] Quantitative
+
+- [ ] Discrète
+- [ ] Continue
+
+```js
+La variable statistique "revenu brut" est :
+```
+- [ ] Qualitative
+- [ ] Quantitative v
+
+- [ ] Discrète
+- [ ] Continue
+
+
+```js
+La variable statistique "nombre de maisons vendues par ville" est :
+```
+- [ ] Qualitative
+- [ ] Quantitative  v
+
+- [ ] Discrète.  v
+- [ ] Continue
+
+
+**Exercice 2**
+
+```console
+Parmi ces assertions, préciser celles qui sont vrai, et celles qui sont fausses.
+````
+
+1. On appelle variable, une caractéristique que l’on étudie.   v
+
+2. La tâche de la statistique descriptive est de recueillir des données.   f
+
+3. La tâche de la statistique descriptive est de présenter les données sous forme de 
+tableaux, de graphiques et d’indicateurs statistiques.   v
+
+4. En Statistique, on classe les variables selon différents types.   v
+
+5. Les valeurs des variables sont aussi appelées modalités.   v
+
+6. Pour une variable qualitative, chaque individu statistique ne peut avoir qu’une seule modalité.   f
+
+7. Pour faire des traitements statistiques, il arrive qu’on transforme une variable 
+quantitative en variable qualitative.    v 
+
+8. La variable quantitative poids d’automobile peut être reclassée en compacte, intermédiaire et grosse.  v    
+
+
+
+**Exercice 3**
+
+```console
+
+Proposer des exemples de variable quantitative transformée en variable qualitative.
+Préciser les modalités de cette dernière.
+```
+
+| Variable |qualitative   Modalités envisageables |
+|----------|--------------------------------------|
+| Hauteur  | 1 m..................................|
+|Poids     | lourd................................|
+|Rendement | .....................................|
+|Chiffre d’affaire |..............................|
+|Cylindrée | .....................................|
+
+
+## CHAPITRE 2
+
+**Exercice 1**
+```js
+Le tableau suivant donne la répartition selon le groupe sanguin de 40 individus pris au
+hasard dans une population,
+```
+
+| Groupes sanguins | A | B | AB | O |
+|------------------|---|---|----|---|
+| L’effectif       | 20| 10| n3 | 5 |
+
+```js
+1. Déterminer la variable statistique et son type.
+    groupe sanguin de type qualitative
+2. Déterminer l’effectif des personnes ayant un groupe sanguin AB.
+    n3 = 40 - (20+10+5) = 5
+```
+**Exercice 2**
+
+```js
+Le gérant d’un magasin vendant des articles de consommation courante a relevé pour un
+article particulier qui semble connaître une très forte popularité, le nombre d’articles vendus
+par jour. Son relevé a porté sur les ventes des mois de Mars et Avril, ce qui correspond à
+52 jours de vente. Le relevé des observations se présente comme suit :
+````
+| 7 | 13 | 8 | 10 | 9 | 12 | 10 | 8 | 9 | 10 | 6 | 14 | 7 | 15 | 9 | 11 | 12 | 11 | 12 | 5 | 14 | 11 | 8 | 10 | 14 | 12 | 8 |
+|---|--- |---|--- |---|--- |--- |---|---|--- |---|--- |---|--- |---|--- |--- |--- |--- |---|--- |--- |---|--- |--- |--- |---|
+| 5 | 7  | 13| 12 | 16| 11 | 9  | 11| 11| 12 | 12| 15 |14 | 5  | 14| 9  | 9  | 14 | 13 | 11|10  | 11 | 12| 9  | 15|.
+
+```console
+
+1. Quel type est la variable statistique étudiée.
+    quantitative discret 
+2. Déterminer le tableau statistique en fonction des effectifs, des fréquences, des effectifs
+cumulés et des fréquences cumulés.
+    
+    from collections import Counter
+
+a = [
+    7,
+    13,
+    8,
+    10,
+    9,
+    12,
+    10,
+    8,
+    9,
+    10,
+    6,
+    14,
+    7,
+    15,
+    9,
+    11,
+    12,
+    11,
+    12,
+    5,
+    14,
+    11,
+    8,
+    10,
+    14,
+    12,
+    8,
+    5,
+    7,
+    13,
+    12,
+    16,
+    11,
+    9,
+    11,
+    11,
+    12,
+    12,
+    15,
+    14,
+    5,
+    14,
+    9,
+    9,
+    14,
+    13,
+    11,
+    10,
+    11,
+    12,
+    9,
+    15,
+]
+print(a)
+count = Counter(a)
+Q1 print(count)
+for cle, nb in count.items():
+    Q2 print(cle, " freq ", nb / 52)
+
+
+    
+4. Soit Fx la fonction de répartition. Déterminer Fx.
+5. Calculer le mode Mo et la moyenne arithmétique x.
+6. Déterminer à partir du tableau puis à partir du graphe, la valeur de la médiane Me.
+7. Calculer la variance et l’écart-type.
+````
