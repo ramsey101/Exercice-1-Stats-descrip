@@ -221,14 +221,56 @@ moy = som/len(a)
 print (moy)
 moy1 = sum(a)/len(a)
 print (moy1)
+mo1 = max(effcum)
+print(mo1)
+mo = statistics.multimode(a)
+print(mo)
+som = 0
+for i, j in count.items():
+    som += i * j
+moy = som / len(a)
+print(moy)
+moy1 = sum(a) / len(a)
 print(moy1)
-varia = statistics.variance(a)
-print (varia)
-ecrt = statistics.stdev(a)
-print (ecrt)
 
 4. Soit Fx la fonction de répartition. Déterminer Fx.
 5. Calculer le mode Mo et la moyenne arithmétique x.
 6. Déterminer à partir du tableau puis à partir du graphe, la valeur de la médiane Me.
 7. Calculer la variance et l’écart-type.
 ````
+**Exercice 3**
+```console
+
+- On considère deux groupes d’étudiants. Nous relevons leurs notes d’examens dans les deux
+tableaux suivants :
+```
+
+|Note (groupe A)| 8 | 9 | 10 | 11 |
+|---------------|---|---|---|---|
+|Effectif | 2 | 2 | 1 | 1 |
+
+
+|Note (groupe B)| 6 | 8 | 9 | 13 | 14 |
+|---------------|---|---|---|---|---|
+|Effectif| 2 | 2 | 2 | 1 | 1 |
+
+```js
+
+
+Calculer la moyenne et l’écart type de chaque groupe. Comparer les deux groupes.
+
+from statistics import *
+a = [8 , 8 , 9 ,9 ,10 , 11]
+b = [6 , 6 , 8 ,8 ,9 ,9 ,13 ,14]
+moya = mean(a)
+ecarta = stdev(a)
+print (moya)
+print (ecarta)
+moyb = mean(b)
+ecartb = stdev(b)
+print (moyb)
+print (ecartb)
+#la classe où l 'ecart est le plus elevé inquide que le niveau de la classe est disproportionné.
+
+```
+
