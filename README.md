@@ -221,6 +221,11 @@ moy = som/len(a)
 print (moy)
 moy1 = sum(a)/len(a)
 print (moy1)
+print(moy1)
+varia = statistics.variance(a)
+print (varia)
+ecrt = statistics.stdev(a)
+print (ecrt)
 
 4. Soit Fx la fonction de répartition. Déterminer Fx.
 5. Calculer le mode Mo et la moyenne arithmétique x.
