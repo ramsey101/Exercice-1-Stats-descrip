@@ -210,7 +210,18 @@ print(mod)
 print(eff)
 print(Nef)
 print(Ffe)
-    
+mo1 = max(effcum)
+print(mo1)
+mo = statistics.multimode(a)
+print(mo)
+som = 0 
+for i,j in count.items ():
+    som+= i*j
+moy = som/len(a)
+print (moy)
+moy1 = sum(a)/len(a)
+print (moy1)
+
 4. Soit Fx la fonction de répartition. Déterminer Fx.
 5. Calculer le mode Mo et la moyenne arithmétique x.
 6. Déterminer à partir du tableau puis à partir du graphe, la valeur de la médiane Me.
