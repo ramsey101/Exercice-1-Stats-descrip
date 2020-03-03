@@ -170,10 +170,25 @@ a = [
 ]
 print(a)
 count = Counter(a)
-Q1 print(count)
+print(count)
 for cle, nb in count.items():
-    Q2 print(cle, " freq ", nb / 52)
-
+    print(cle," freq ","{:.2f}".format(nb / 52))
+effcum = sorted(count.items(), reverse = False)
+long = len(a)
+F=0
+N=0
+for ef in effcum :
+    N+=ef[1]
+    print ("l'effectif cumulé de ",ef[0]," est " , N)
+for ef in effcum :
+    freq = ef[1]/52
+    F+=freq
+    print("la frequence cumulées de ",ef[0]," est : ",F)
+print ("La courbe F(x) passe par les points : ")
+for ef in effcum:
+    freq = ef[1] / 52
+    F += freq
+    print ("(",ef[0],",",(F-1),")")
 
     
 4. Soit Fx la fonction de répartition. Déterminer Fx.
