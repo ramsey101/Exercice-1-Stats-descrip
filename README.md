@@ -273,4 +273,39 @@ print (ecartb)
 #la classe où l 'ecart est le plus elevé inquide que le niveau de la classe est disproportionné.
 
 ```
+**Exercice 2**
+```js
+Une étude sur le budget consacré aux vacances d’été auprès de ménages a donné les
+résultats suivants
+```
 
+| Budget X | Fréquence cumulée | Fréquences |
+|-----------|------|----|
+|[800 , 1000[|  0.08  | .... |
+|[1000, 1400[| 0.18 |....|
+|[1400, 1600[| 0.34 |....|
+|[1600, β[| 0.64 |....|
+|[β, 2400[| 0.73 |....|
+|[2400, α[| 1 |....|
+
+
+```js
+Le travail demandé :
+
+– Certaines données sont manquantes. Calculer la borne manquante α sachant que
+
+l’étendue de la série est égale à 3200.
+
+– Calculer les fréquences dans le tableau.
+
+– Calculer la borne manquante β dans les deux cas suivants :
+
+1. Le budget moyen est égal à 1995.
+
+2. Le budget médian est égal à 1920.
+
+alpha = e + 800 =4000
+moy = a + 0,39 B/2 = 1800 avec a = 1644
+1600 - Me/1600 - B = 0,34 - 0,5 / 0,34 - 0,64 => B= 2200 
+
+```
