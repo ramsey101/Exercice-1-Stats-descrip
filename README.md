@@ -189,7 +189,27 @@ for ef in effcum:
     freq = ef[1] / 52
     F += freq
     print ("(",ef[0],",",(F-1),")")
-
+mod = []
+eff = []
+f = []
+Nef = []
+Ffe = []
+N1 = 0
+F1 = 0
+for ef in effcum:
+    mod.append(ef[0])
+    eff.append(ef[1])
+    f.append(ef[1] / 52)
+    N1 += ef[1]
+    N1 = round(N1, 2)
+    Nef.append(N1)
+    F1 += ef[1] / 52
+    F1 = round(F1, 2)
+    Ffe.append(F1)
+print(mod)
+print(eff)
+print(Nef)
+print(Ffe)
     
 4. Soit Fx la fonction de répartition. Déterminer Fx.
 5. Calculer le mode Mo et la moyenne arithmétique x.
